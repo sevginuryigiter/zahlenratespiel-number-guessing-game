@@ -1,20 +1,14 @@
-import random
+zahlenratespiel --- number-guessing-game
 
-secret_num = random.randint(1,100)
-counter = 10
+#english
 
-while True:
-    try:
-        test_num = int(input("Let's find the secret number: "))
-        counter -= 1
-        if test_num == secret_num:
-            print("Bingo! You guessed the number. ")
-        if test_num > secret_num:
-            print("Sorry, your number is too high. Remaining attempts:  ", counter)
-        if test_num < secret_num:
-            print("Sorry, your number is too small. Remaining attempts:  ", counter)
-        if counter == 0:
-            print("Oops, game over! The secret number was: ", secret_num)
-    except ValueError:
-        print("Please enter a valid number: ")
-        continue
+This project is my first Python program created as part of my software engineering studies.
+The computer selects a random number, and the player has 10 attempts to guess it.
+After each attempt, the program provides hints indicating whether the secret number is higher or lower.
+
+
+#german:
+
+Dieses Projekt ist mein erstes Python-Programm im Rahmen meines Softwareentwicklung-Studiums. 
+Der Computer wählt eine zufällige Zahl, und der Spieler hat 10 Versuche sie zu erraten. Nach jedem Versuch 
+gibt das Programm Hinweise, ob die gesuchte Zahl höher oder niedriger ist.
